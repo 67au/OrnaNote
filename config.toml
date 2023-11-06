@@ -1,15 +1,25 @@
-baseURL = 'https://67au.github.io/OrnaNote/'
-languageCode = 'zh'
-title = 'The Path of Orna'
+baseURL = 'https://orna.fqegg.top/'
+# baseURL = 'https://67au.github.io/OrnaNote/'
+languageCode = 'zh-cn'
+title = 'OrnaRPG 记录'
 theme = "PaperMod"
+copyright = "© 2023 **[FQEGG](https://github.com/67au)**"
+buildFuture = true
+hasCJKLanguage = true
+paginate = 10
+enableInlineShortcodes = true
+enableEmoji = true
 
 [ minify ]
 disableXML = true
 minifyOutput = true
 
+[ outputs ]
+home = ['HTML', 'RSS', 'JSON']
+
 [ params ]
 env = 'production'
-title = 'The Path of Orna'
+title = 'OrnaRPG 记录'
 author = 'FQEGG'
 keywords = ['Orna', 'OrnaRPG']
 
@@ -34,3 +44,21 @@ identifier = "archives"
 name = "归档"
 url = "/archives/"
 weight = 20
+
+[[menu.main]]
+identifier = "search"
+name = "搜索"
+url = "/search/"
+weight = 30
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      footnote = true
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions.cjk]
+      eastAsianLineBreaks = false
+      eastAsianLineBreaksStyle = 'simple'
+      enable = false
+      escapedSpace = false

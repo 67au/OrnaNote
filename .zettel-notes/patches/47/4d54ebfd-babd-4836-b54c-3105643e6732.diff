@@ -1,0 +1,10 @@
+--- old
++++ new
+@@ -4,2 +4,2 @@
+-description: "史古基别捣乱"
+-categories: ['event']
++description: "主题月"
++categories: ['活动']
+@@ -7,1 +7,1 @@
+-tags: ['202312', 'event']
++tags: ['202312', '活动']
