@@ -1,0 +1,36 @@
+baseURL = 'https://67au.github.io/OrnaNote/'
+languageCode = 'zh'
+title = 'The Path of Orna'
+theme = "PaperMod"
+
+[ minify ]
+disableXML = true
+minifyOutput = true
+
+[ params ]
+env = 'production'
+title = 'The Path of Orna'
+author = 'FQEGG'
+keywords = ['Orna', 'OrnaRPG']
+
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+hideSummary = true
+
+[ params.homeInfoParams ]
+Title = '你好，旅行者！'
+Content = '如需要获得更多帮助，请加 QQ 群：140784377'
+
+[[menu.main]]
+identifier = "tags"
+name = "标签"
+url = "/tags/"
+weight = 10
+
+[[menu.main]]
+identifier = "archives"
+name = "归档"
+url = "/archives/"
+weight = 20
