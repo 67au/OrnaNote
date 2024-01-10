@@ -1,0 +1,24 @@
+--- old
++++ new
+@@ -3,1 +3,20 @@
+-description: "dns 工
++description: "dns 工具"
++date: 2024-01-01T08:00:00+08:00
++author: "FQEGG"
++categories: ['工具']
++tags: ['工具']
++---
++
++# 解决国内 Orna 连接卡顿的问题
++
++## 导入以下 Hosts
++
++```
++https://67au.github.io/OrnaNote/tools/playorna.txt
++```
++
++## 或者，安装 dns66 ，导入以下文件
++
++```
++https://67au.github.io/OrnaNote/tools/dns66-playorna.json
++```

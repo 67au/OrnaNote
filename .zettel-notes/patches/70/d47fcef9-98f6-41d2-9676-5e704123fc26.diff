@@ -1,0 +1,37 @@
+--- old
++++ new
+@@ -12,1 +12,1 @@
+-## 导入以下 Hosts
++## 安装 AdAway
+@@ -14,0 +14,2 @@
++[点击下载](https://mirrors.tuna.tsinghua.edu.cn/fdroid/repo/org.adaway_60101.apk)，或者复制下面链接到浏览器。
++
+@@ -15,1 +17,1 @@
+-https://67au.github.io/OrnaNote/tools/playorna.txt
++https://mirrors.tuna.tsinghua.edu.cn/fdroid/repo/org.adaway_60101.apk
+@@ -18,1 +20,1 @@
+-## 或者，安装 dns66 ，导入以下文件
++安装后，选择 vpn 模式。
+@@ -20,0 +22,6 @@
++## 导入文件
++
++选择下面其中一个文件导入，
++
++### 中国电信
++
+@@ -21,1 +29,1 @@
+-https://67au.github.io/OrnaNote/tools/dns66-playorna.json
++https://orna.fqegg.top/tools/hosts/china-telecom.txt
+@@ -23,0 +31,12 @@
++
++### 中国移动
++
++```
++https://orna.fqegg.top/tools/hosts/china-mobile.txt
++```
++
++### 中国联通
++
++```
++https://orna.fqegg.top/tools/hosts/china-unicom.txt
++```

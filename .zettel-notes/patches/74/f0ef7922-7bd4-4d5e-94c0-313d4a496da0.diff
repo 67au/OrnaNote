@@ -1,0 +1,8 @@
+--- old
++++ new
+@@ -2,1 +2,4 @@
+-104.16.245.75 chat.orna
++104.16.245.75 chat.orna.gg
++104.16.245.75 staging.orna.gg
++104.16.245.75 prod.aethric.com
++104.16.245.75 blog.ornarpg.com

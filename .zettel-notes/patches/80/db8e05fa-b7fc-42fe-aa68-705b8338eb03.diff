@@ -1,0 +1,8 @@
+--- old
++++ new
+@@ -2,1 +2,4 @@
+-172.67.4.116 chat.orna.g
++172.67.4.116 chat.orna.gg
++172.67.4.116 staging.orna.gg
++172.67.4.116 prod.aethric.com
++172.67.4.116 blog.ornarpg.com

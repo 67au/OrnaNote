@@ -1,0 +1,4 @@
+104.22.37.243 playorna.com
+104.22.37.243 chat.orna.gg
+104.22.37.243 staging.orna.gg
+104.22.37.243 prod.aethric.com

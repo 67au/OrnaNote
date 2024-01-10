@@ -1,0 +1,10 @@
+--- old
++++ new
+@@ -2,2 +2,2 @@
+-title: "解决国内 Orna 连接卡顿的问题"
+-description: "dns 工具"
++title: "缓解 Orna 在国内连接卡顿的问题"
++description: "线路优化"
+@@ -14,1 +14,1 @@
+-[点击下载](https://mirrors.tuna.tsinghua.edu.cn/fdroid/repo/org.adaway_60101.apk)，或者复制下面链接到浏览器。
++[点击下载](https://mirrors.tuna.tsinghua.edu.cn/fdroid/repo/org.adaway_60101.apk)，或者复制下面链接到浏览器下载。

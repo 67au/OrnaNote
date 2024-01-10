@@ -1,0 +1,8 @@
+--- old
++++ new
+@@ -2,1 +2,4 @@
+-172.64.99.229 chat.orna
++172.64.99.229 chat.orna.gg
++172.64.99.229 staging.orna.gg
++172.64.99.229 prod.aethric.com
++172.64.99.229 blog.ornarpg.com
