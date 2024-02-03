@@ -9,7 +9,7 @@ tags: ['活动', '202402']
 
 # 兽伐记
 
-Beastfelled ，翻译谐音暗指 Lyncus 在《变形记》被惩罚变身成山猫的[故事](https://en.m.wikipedia.org/wiki/Lyncus)
+Beastfelled ，翻译谐音暗指 Lyncus 在《变形记》被惩罚变身成猞猁的[故事](https://en.m.wikipedia.org/wiki/Lyncus)
 
 头目与怪物会在兽穴中出现部分怪物与头目会在普通地牢中出现。
 
