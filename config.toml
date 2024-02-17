@@ -51,6 +51,12 @@ name = "搜索"
 url = "/search/"
 weight = 30
 
+[[menu.main]]
+identifier = "sites"
+name = "工具"
+url = "/sites/"
+weight = 40
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
