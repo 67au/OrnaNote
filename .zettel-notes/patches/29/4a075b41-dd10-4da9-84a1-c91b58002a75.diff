@@ -1,0 +1,5 @@
+--- old
++++ new
+@@ -106,1 +106,1 @@
+-用户 <== ISP ==> Cloudflare CDN <== 内部网络 ==> 游戏服务器
++用户 == ISP ==> Cloudflare CDN == 内部网络 ==> 游戏服务器

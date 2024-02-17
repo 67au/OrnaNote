@@ -1,0 +1,8 @@
+--- old
++++ new
+@@ -103,1 +103,1 @@
+-Orna 和 HoA 都是托管在 Cloudflare 的 CDN 网络上，以提供相对更好的连接和缓存。由于 Cloudflare CDN 的特点，为每个网站分配几个cdn ip，根据 Cloudflare 的智能选择，会自动为用户提供网络运营商（ISP）到 Cloudflare CDN 节点的线路（不懂可以搜索下，cloudflare 优选 ip ）。然后问题就出现在这里， Cloudflare 也会根据时间调整线路，如果分配到较差的，就会卡顿。所以我们就需要优选一个 ip ，从而指定到相对较优的线路上避开，然后通过 adaway 来将游戏域名解析到这些 ip 上。
++Orna 和 HoA 都是托管在 Cloudflare 的 CDN 网络上，以提供相对更好的连接和缓存。由于 Cloudflare CDN 的特点，为每个网站分配几个cdn ip，根据 Cloudflare 的智能选择，会自动为用户提供网络运营商（ISP）到 Cloudflare CDN 节点的线路（不懂可以搜索下，cloudflare 优选 ip ）。然后问题就出现在这里， Cloudflare 会根据时间来调整线路，如果用户分配到较差的线路，就会发生卡顿。所以我们就需要优选一个 ip ，从而指定到相对较优的线路上避开，然后通过 adaway 来将游戏域名解析到这些 ip 上。
+@@ -106,1 +106,1 @@
+-用户 == ISP ==> Cloudflare CDN == 内部网络 ==> 游戏服务器
++用户 ==> ISP ==线路较差，甚至连不上==> Cloudflare CDN ==> 内部网络 ==> 游戏服务器

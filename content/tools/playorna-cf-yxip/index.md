@@ -1,5 +1,5 @@
 ---
-title: "缓解 Orna 在国内长翻书的问题"
+title: "解决 Orna/HoA 翻书的问题"
 description: "线路优化"
 date: 2024-01-01T08:00:00+08:00
 author: "FQEGG"
@@ -7,7 +7,9 @@ categories: ['工具']
 tags: ['工具']
 ---
 
-# 缓解 Orna 在国内长翻书的问题
+# 解决 Orna/HoA 翻书的问题
+
+> 根据我长时间观察，这问题是全球玩家都会经常遇到的，ISP 与 CF CDN 连接的问题，详细原因可以查看[原理](#原理)。
 
 只能优化连接的延时（特别是用**中国移动**的玩家），而关于游戏数据库操作的延时不会降低，特别是背包相关的，因为这是游戏的问题，所以这种情况应是**清理背包**。
 
@@ -72,6 +74,8 @@ https://orna.fqegg.top/tools/hosts/china-unicom-1.txt
 
 ### TW
 
+> ip 指向的是 icook.tw 的 cf cdn ，使用前先尝试打开 https://icook.tw
+
 ```
 https://orna.fqegg.top/tools/hosts/tw.txt
 ```
@@ -96,7 +100,11 @@ https://orna.fqegg.top/tools/hosts/tw-1.txt
 
 ## 原理
 
-Orna 和 HoA 都是托管在 Cloudflare 的网络上，由于 Cloudflare CDN 的特点，它会提供大量的任播 ip ，每个 ip 只要你使用对应的 SNI ，都能连接到同一个网站（不懂的可以搜索下，cloudflare 优选 ip ）。但你运营商不可能每次都给你分配延时最低和最快的，所以我们就需要优选一个 ip ，然后通过 adaway 来将游戏域名解析到这些 ip 上。
+Orna 和 HoA 都是托管在 Cloudflare 的 CDN 网络上，以提供相对更好的连接和缓存。由于 Cloudflare CDN 的特点，为每个网站分配几个cdn ip，根据 Cloudflare 的智能选择，会自动为用户提供网络运营商（ISP）到 Cloudflare CDN 节点的线路（不懂可以搜索下，cloudflare 优选 ip ）。然后问题就出现在这里， Cloudflare 会根据时间来调整线路，如果用户分配到较差的线路，就会发生卡顿。所以我们就需要优选一个 ip ，从而指定到相对较优的线路上避开，然后通过 adaway 来将游戏域名解析到这些 ip 上。
+
+```
+用户 ==> ISP =线路较差，甚至连不上=> Cloudflare CDN ==> 内部网络 ==> 游戏服务器
+```
 
 ## 感谢
 

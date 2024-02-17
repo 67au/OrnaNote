@@ -21,3 +21,9 @@ https://realm.fqegg.top
 
 > 生成每月异域血量图，数据自动更新，支持简中、繁中、英语，如果遇到出现与列表不符的阶级，请按解锁按钮
 
+## 线路优化
+
+https://orna.fqegg.top/tools/playorna-cf-yxip/
+
+> 详情点进去看看，不多说
+
