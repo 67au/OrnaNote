@@ -3,6 +3,14 @@ title: "FQEGG 工具站"
 url: "/sites/"
 ---
 
+## 图鉴 Yet Another Codex of Orna
+
+https://codex.fqegg.top
+
+> 官网图鉴升级版，支持查询 orna.guide 的装备，也支持查询装备品质。
+
+> Credit@套套 https://orna.0u0.moe
+
 ## 奥林匹亚之塔
 
 https://tower.fqegg.top
