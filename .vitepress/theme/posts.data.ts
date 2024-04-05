@@ -20,6 +20,9 @@ export default createContentLoader(theme.mdFilePatterns, {
       date: formatDate(frontmatter.date),
     } as Post))
     .sort((a, b) => {
+      return a.url.localeCompare(b.url)
+    })
+    .sort((a, b) => {
       return b.date.time.getTime() - a.date.time.getTime()
     })
   }
