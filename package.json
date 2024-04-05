@@ -1,0 +1,22 @@
+{
+  "name": "blog",
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "tsconfig": "^7.0.0",
+    "typescript": "^5.4.3",
+    "vite-plugin-vitepress-auto-sidebar": "^1.6.3",
+    "vite-plugin-vuetify": "^2.0.3",
+    "vitepress": "^1.0.2"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "vuetify": "^3.5.14"
+  }
+}

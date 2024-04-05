@@ -1,0 +1,21 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "NodeNext",
+    "strict": true,
+    "outDir": "./dist",
+    "rootDir": "./"
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.vue",
+    "auto-imports.d.ts",
+    "components.d.ts",
+  ],
+  "exclude": [
+    "node_modules/",
+    "**/cache/",
+    "**/dist/",
+  ],
+}
