@@ -13,7 +13,7 @@ export interface Post {
   subtitle: string,
   url: string
   date: {
-    time: Date,
+    time: number,
     string: string
   }
   excerpt: string | undefined
