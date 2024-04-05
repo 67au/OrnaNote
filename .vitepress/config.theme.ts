@@ -13,7 +13,7 @@ export default {
     next: '下一页'
   },
   lastUpdated: {
-    text: 'Updated at',
+    text: '最后更新时间',
     formatOptions: {
       dateStyle: 'full',
       timeStyle: 'medium'
