@@ -50,7 +50,7 @@ export default defineConfigWithTheme<ThemeConfig>({
       })
     ],
     ssr: {
-      noExternal: ["vuetify"],
+      noExternal: true,
     },
   },
   rewrites: {
