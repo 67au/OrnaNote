@@ -1,0 +1,5 @@
+198.41.204.12 playorna.com
+198.41.204.12 chat.orna.gg
+198.41.204.12 staging.orna.gg
+198.41.204.12 prod.aethric.com
+198.41.204.12 blog.ornarpg.com
