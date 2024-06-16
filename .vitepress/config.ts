@@ -10,6 +10,7 @@ import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 export default defineConfigWithTheme<ThemeConfig>({
   title: "OrnaRPG 记录",
   base: '/',
+  description: 'OrnaPRG Record by FQEGG',
   cleanUrls: true,
   lastUpdated: true,
   srcExclude: [
