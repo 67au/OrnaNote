@@ -30,8 +30,8 @@ export default defineConfigWithTheme<ThemeConfig>({
           'pages'
         ],
         sideBarResolved: (data) => {
-          const root = data['/events/'] as DefaultTheme.SidebarItem[] || [];
-          root.map((e) => {
+          const eventRoot = data['/events/'] as DefaultTheme.SidebarItem[] || [];
+          eventRoot.map((e) => {
             return e.items?.map((years) => {
               years.text = `${years.text?.slice(0,-2)}/${years.text?.slice(-2)}`
               return years.items?.map((event) => {
@@ -46,7 +46,22 @@ export default defineConfigWithTheme<ThemeConfig>({
               })
             })
           });
-          return { '/posts/events/': root }
+          const noteRoot = data['/notes/'] as DefaultTheme.SidebarItem[] || [];
+          noteRoot.map((e) => {
+            return e.items?.map((categories) => {
+              return categories.items?.map((note) => {
+                if (note.items !== undefined) {
+                  note.link = note.items.find((elem) => {
+                    return note.text === elem.text
+                  })?.link?.replace('/index.html', '/');
+                  delete note.items;
+                  delete note.collapsed;
+                }
+                note.link = note.link?.replace('notes', 'posts/notes');
+              })
+            })
+          });
+          return { '/posts/events/': eventRoot, '/posts/notes': noteRoot }
         }
       })
     ],

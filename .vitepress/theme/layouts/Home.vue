@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Container from '../components/Container.vue';
-import HomeFeed from '../components/HomeFeed.vue';
-import Profile from '../components/Profile.vue';
+import Container from "../components/Container.vue";
+import HomeFeed from "../components/HomeFeed.vue";
+import Profile from "../components/Profile.vue";
 </script>
 
 <template>

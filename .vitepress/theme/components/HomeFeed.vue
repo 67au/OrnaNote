@@ -1,11 +1,14 @@
 <script setup lang="ts">
-import { data as allPosts } from "../posts.data";
-import theme from '../../config.theme';
-
+import theme from "../../config.theme";
+import { data as allPosts } from "../events.data";
 </script>
 
 <template>
-  <v-data-iterator :items="allPosts" :page="page" :items-per-page="theme.pageSize">
+  <v-data-iterator
+    :items="allPosts"
+    :page="page"
+    :items-per-page="theme.pageSize"
+  >
     <template v-slot:default="{ items }">
       <template v-for="(post, i) in items" :key="i">
         <v-card class="mb-2" variant="tonal" :href="post.raw.url" link>
@@ -24,20 +27,26 @@ import theme from '../../config.theme';
     </template>
     <template v-slot:footer="{ page, pageCount, prevPage, nextPage }">
       <div class="d-flex align-center justify-space-between pa-4">
-        <v-btn :disabled="page === 1" density="comfortable" icon="mdi-arrow-left" variant="tonal" rounded
-          @click="prevPage" />
+        <v-btn
+          :disabled="page === 1"
+          density="comfortable"
+          icon="mdi-arrow-left"
+          variant="tonal"
+          rounded
+          @click="prevPage"
+        />
 
-        <div class="mx-2 text-caption">
-         {{ page }} / {{ pageCount }}
-        </div>
+        <div class="mx-2 text-caption">{{ page }} / {{ pageCount }}</div>
 
-        <v-btn :disabled="page >= pageCount" density="comfortable" icon="mdi-arrow-right" variant="tonal" rounded
-          @click="nextPage" />
+        <v-btn
+          :disabled="page >= pageCount"
+          density="comfortable"
+          icon="mdi-arrow-right"
+          variant="tonal"
+          rounded
+          @click="nextPage"
+        />
       </div>
     </template>
   </v-data-iterator>
 </template>
-
-<script lang="ts">
-export default {}
-</script>

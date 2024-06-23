@@ -1,6 +1,10 @@
 <script setup lang="ts">
-import Container from '../components/Container.vue';
-import { data as allPosts } from "../posts.data";
+import Container from "../components/Container.vue";
+const props = defineProps({
+  posts: { type: Object as PropType<Posts>, required: true },
+});
+
+const allPosts = props.posts
 
 const postsByYear = {};
 allPosts.forEach((post) => {
@@ -27,9 +31,19 @@ const years = Object.keys(postsByYear).sort().reverse();
             {{ year }}
           </a>
         </div>
-        <v-list line="one" style="background: var(--vp-c-bg);">
-          <v-list-item v-for="post, index in postsByYear[year]" class="mb-1" :key="index" :title="post.title"
-            :subtitle="post.subtitle" variant="tonal" density="compact" link rounded :href="post.url">
+        <v-list line="one" style="background: var(--vp-c-bg)">
+          <v-list-item
+            v-for="(post, index) in postsByYear[year]"
+            class="mb-1"
+            :key="index"
+            :title="post.title"
+            :subtitle="post.subtitle"
+            variant="tonal"
+            density="compact"
+            link
+            rounded
+            :href="post.url"
+          >
           </v-list-item>
         </v-list>
       </div>
