@@ -1,5 +1,0 @@
-172.64.168.136 playorna.com
-172.64.168.136 chat.orna.gg
-172.64.168.136 staging.orna.gg
-172.64.168.136 prod.aethric.com
-172.64.168.136 blog.ornarpg.com

@@ -1,11 +1,11 @@
-import { DefaultTheme } from "vitepress";
 import { type ThemeConfig } from "./theme/types";
 
 export default {
   avatar: 'https://playorna.com/static/img/packs/community/translator/FQEGG.png',
   author: 'FQEGG',
   bio: '如需要获得更多帮助，请加 QQ 群：140784377',
-  mdFilePatterns: ["posts/events/**/*.md"],
+  eventFilePatterns: ["posts/events/**/*.md"],
+  noteFilePatterns: ["posts/notes/**/*.md"],
   pageSize: 5,
 
   docFooter: {
@@ -25,12 +25,16 @@ export default {
   },
   nav: [
     {
-      text: "存档",
-      link: "/posts",
+      text: "活动",
+      link: "/events",
     },
     {
-      text: "FQEGG 工具合集",
-      link: "/sites",
+      text: "手记",
+      link: "/notes",
+    },
+    {
+      text: "工具",
+      link: "/tools",
     },
   ],
   search: {

@@ -5,7 +5,8 @@ import './style.css'
 
 import Layout from './layouts/Layout.vue'
 import Home from './layouts/Home.vue'
-import Posts from './layouts/Posts.vue'
+import EventPosts from './layouts/EventPosts.vue'
+import NotePosts from './layouts/NotePosts.vue'
 
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
@@ -19,7 +20,8 @@ export default {
   Layout: Layout,
   enhanceApp({ app, router, siteData }) {
     app.component("Home", Home);
-    app.component("Posts", Posts);
+    app.component("EventPosts", EventPosts);
+    app.component("NotePosts", NotePosts);
     app.use(vuetify);
   }
 } satisfies Theme

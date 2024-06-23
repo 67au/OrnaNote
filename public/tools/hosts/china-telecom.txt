@@ -1,5 +1,0 @@
-104.19.220.154 playorna.com
-104.19.220.154 chat.orna.gg
-104.19.220.154 staging.orna.gg
-104.19.220.154 prod.aethric.com
-104.19.220.154 blog.ornarpg.com

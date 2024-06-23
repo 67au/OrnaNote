@@ -1,11 +1,20 @@
-import { createContentLoader } from 'vitepress'
-import { type Post } from './types'
-import theme from '../config.theme'
+import { createContentLoader } from "vitepress";
+import { Post } from "./types";
 
-declare const data: Post[]
-export { data }
+export function formatDate(raw: string): Post["date"] {
+  const date = new Date(raw);
+  date.setUTCHours(8);
+  return {
+    time: +date,
+    string: date.toLocaleDateString("zh-CN", {
+      year: "numeric",
+      month: "2-digit",
+    }),
+  };
+}
 
-export default createContentLoader(theme.mdFilePatterns, {
+export function contentLoader(filePatterns: Array<string>) {
+	return createContentLoader(filePatterns, {
   excerpt: true,
   transform(raw): Array<Post> {
     return raw
@@ -27,15 +36,4 @@ export default createContentLoader(theme.mdFilePatterns, {
     })
   }
 })
-
-function formatDate(raw: string): Post['date'] {
-  const date = new Date(raw);
-  date.setUTCHours(8);
-  return {
-    time: +date,
-    string: date.toLocaleDateString('zh-CN', {
-      year: 'numeric',
-      month: '2-digit',
-    })
-  } 
 }

@@ -4,16 +4,17 @@ export interface ThemeConfig extends DefaultTheme.Config {
   avatar: string,
   author: string,
   bio: string,
-  mdFilePatterns: Array<string>,
+  eventFilePatterns: Array<string>,
+  noteFilePatterns: Array<string>,
   pageSize: number,
 }
 
 export interface Post {
   title: string
-  subtitle: string,
+  subtitle: string
   url: string
   date: {
-    time: number,
+    time: number
     string: string
   }
   excerpt: string | undefined
