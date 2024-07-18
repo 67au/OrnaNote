@@ -1,5 +1,5 @@
 ---
-title: " 宝箱怪再临"
+title: "宝箱怪再临"
 subtitle: "轻量级活动"
 author: "FQEGG"
 date: 2024-07-20
