@@ -1,7 +1,7 @@
 ---
 title: "材料获取指南"
 author: "FQEGG"
-subtitle: "新建文件夹.webp"
+subtitle: "未完成内容"
 date: 2024-06-23
 categories:
   - 笔记
