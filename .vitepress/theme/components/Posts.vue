@@ -8,9 +8,15 @@ const allPosts = props.posts
 
 const postsByYear = {};
 allPosts.forEach((post) => {
-  const time = post.date.string;
-  postsByYear[time] = postsByYear[time] || [];
-  postsByYear[time].push(post);
+  const time = post.date.time;
+  if(postsByYear[time] === undefined) {
+    postsByYear[time] = {
+      string: post.date.string,
+      posts: []
+    };
+  }
+  
+  postsByYear[time].posts.push(post);
 });
 const years = Object.keys(postsByYear).sort().reverse();
 </script>
@@ -27,13 +33,13 @@ const years = Object.keys(postsByYear).sort().reverse();
       <v-divider class="mt-2 mb-2" />
       <div v-for="year in years" :key="year">
         <div class="text-overline font-weight-bold">
-          <a :id="year" :href="`#${year}`">
-            {{ year }}
+          <a :id="year" :href="`#${postsByYear[year].string}`">
+            {{ postsByYear[year].string }}
           </a>
         </div>
         <v-list line="one" style="background: var(--vp-c-bg)">
           <v-list-item
-            v-for="(post, index) in postsByYear[year]"
+            v-for="(post, index) in postsByYear[year].posts"
             class="mb-1"
             :key="index"
             :title="post.title"
